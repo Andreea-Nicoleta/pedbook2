@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Pedbook-Platforma educațională Pedbook</title>
+        <style>
+            h1{
+        font-size: 100px
+            }
+        </style>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* Culori pastelate */
+        :root {
+            --primary: #7ed4d6;
+            --secondary: #99cad2;
+            --accent: #c5a8f8;
+            --background: #c6cede;
+            --text: #000000;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            background-color: var(--background);
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            padding: 2rem;
+            text-align: center;
+            box-shadow: 0 4px 6px rgb(189, 140, 102);
+        }
+
+        h1, h2, h3 {
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 4rem 2rem;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            padding: 3rem 2rem;
+            background: white;
+        }
+
+        .feature-card {
+            text-align: center;
+            padding: 2rem;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+            background: rgba(255,255,255,0.9);
+        }
+
+        .feature-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .cta-button {
+            background: var(--secondary);
+            color: rgb(255, 106, 106);
+            padding: 1rem 2rem;
+            border-radius: 30px;
+            text-decoration: none;
+            display: inline-block;
+            margin: 2rem 0;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+
+        .cta-button:hover {
+            background: #E76F51;
+            transform: scale(1.05);
+        }
+
+        .testimonials {
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+
+        .testimonial-slide {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgb(243, 192, 192);
+        }
+
+        footer {
+            background: var(--text);
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .product-showcase {
+            position: relative;
+            overflow: hidden;
+            height: 500px;
+        }
+
+        .product-image {
+            width: 60%;
+            margin: 0 auto;
+            transition: transform 0.3s ease;
+        }
+
+        .product-image:hover {
+            transform: scale(1.03);
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .animated {
+            animation: fadeIn 1s ease-in;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>PedBook</h1>
+        <p>Platformă educațională pentru micii antreprenori</p>
+        <style>
+            header p{
+                font-size: 40px
+            }
+        </style>
+    </header>
+
+    <section class="hero animated">
+        <div class="product-showcase">
+            <img src="Imagine/WhatsApp Image 2025-04-01 at 12.30.23 (1).jpeg" alt="Micii Antreprenori" width="1000" height="550"/>
+        </div>
+        <h2>Platforma interactivă unde copiii descoperă antreprenoriatul!</h2>
+        <p>Descarcă acum pentru a începe aventura antreprenorială!</p>
+        <a href="#order" class="cta-button">Descarcă acum</a>
+    </section>
+
+    <section class="features">
+        <div class="feature-card">
+            <i class="fas fa-dollar-sign fa-3x"></i>
+            <h3>Înțelegerea conceptului de antreprenoriat!</h3>
+            <p>Să știe ce înseamnă să fii antreprenor și care sunt pașii pentru a începe o afacere.</p>
+        </div>
+        <div class="feature-card">
+            <i class="fas fa-chart-line fa-3x"></i>
+            <h3>Dezvoltarea abilităților de marketing!</h3>
+            <p>Să știe cum să își promoveze ideea sau produsul prin metode simple de marketing, cum ar fi rețelele sociale.</p>
+        </div>
+        <div class="feature-card">
+            <i class="fas fa-piggy-bank fa-3x"></i>
+            <h3>Înțelegerea importanței economisirii și gestionării banilor!</h3>
+            <p>Să învețe cum să stabilească un buget și cum să gestioneze veniturile și cheltuielile.</p>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <div class="testimonial-slide">
+            <h3>Mici Antreprenori, Mari Visuri!</h3>
+            <blockquote>
+                "Platforma noastră ajută copiii să își dezvolte abilități antreprenoriale prin jocuri interactive și provocări, învățându-i cum să gândească creativ, să își gestioneze ideile de afaceri și să devină lideri în propriile lor proiecte."
+            </blockquote>
+            <p>-Echipa PedLeader-</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 PedBook. Toate drepturile rezervate.</p>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/share/1Bwd8dy2Ec/"
+            class="facebook-button" target="_blank">
+            <i class="fab fa-facebook"></i> Facebook
+            </a>
+            <a href="https://www.instagram.com/ped_leader_6?igsh=bHo4NWpjMmNwY3h6&utm_source=qr"
+            class="instagram-button" target="_blank">
+            <i class="fab fa-instagram"></i> instagram
+            </a>
+        </div>
+    </footer>
+
+    <script>
+        // Interactivitate
+        document.querySelector('.cta-button').addEventListener('click', function(e) {
+            e.preventDefault();
+            alert('Vă mulțumim pentru încredere! Veți fi redirecționat către pagina de plată.');
+            window.location.href = '#order';
+        });
+
+        // Animare la scroll
+        window.addEventListener('scroll', function() {
+            const elements = document.querySelectorAll('.animated');
+            elements.forEach(el => {
+                const elementTop = el.getBoundingClientRect().top;
+                if(elementTop < window.innerHeight) {
+                    el.style.opacity = '1';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
